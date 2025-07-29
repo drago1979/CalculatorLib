@@ -1,0 +1,53 @@
+﻿# Build artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Rider / IntelliJ
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# DotCover (optional, if using JetBrains test coverage)
+.idea/.idea.CalculatorLib.dotCover
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# Rider specific caches and logs
+.idea/.idea.*
+.idea/.idea*/**/*
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.trx
+
+# VS Code (if someone uses it)
+.vscode/
+
+# Global.json SDK override (if intentionally not shared)
+global.json
