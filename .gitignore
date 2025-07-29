@@ -29,6 +29,7 @@ Thumbs.db
 packages/
 project.lock.json
 project.assets.json
+NuGet.config
 *.nuget.props
 *.nuget.targets
 
