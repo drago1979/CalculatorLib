@@ -10,9 +10,9 @@ See [CalculatorLib.csproj](./CalculatorLib.csproj) for target framework and depe
 ### 3. FORKING
 
 https://github.com/drago1979/CalculatorLib
-### 4. INSTALLATION
+### 4. INSTALLATION - via NuGet package
 
-Create NuGet.config file in your solution/project:
+1. Create NuGet.config file in your solution/project:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -33,13 +33,24 @@ Create NuGet.config file in your solution/project:
     ⚠️ Replace: YOUR_GITHUB_PERSONAL_ACCESS_TOKEN with a GitHub token that has at least the read:packages scope.
     ⚠️ Warning: Exclude the NuGet.config from versioning to keep your GitHub token safe.
 
-### 5. Install the Package
+2. Install the Package
 After adding the source, run:
 ```bash
 dotnet add package CalculatorLib --version 1.0.1
 ```
+### 4. INSTALLATION - via Source Code
+1. Clone the repository:
+``` bash
+git clone https://github.com/drago1979/CalculatorLib.git
+```
+2. Copy the CalculatorLib directory into your solution folder or add it as an existing project.
 
-### 6. HOW TO USE THE LIBRARY
+3. Add a project reference from your main project to CalculatorLib:
+``` bash
+dotnet add <YourProject>.csproj reference CalculatorLib/CalculatorLib.csproj
+```
+
+### 6. HOW TO USE THE LIBRARY - NuGet package
 
 #### => Include it in file
 ```csharp
@@ -92,3 +103,5 @@ Besides that, some other classes also have public methods in case you choose to 
         var result = Calculator.Calculate(num, num, operand);
     }
 ```
+
+#### => Additional details can be found in source code.
