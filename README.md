@@ -7,9 +7,6 @@ This is a demo calculator library.
 ### 2. REQUIREMENTS
 See [CalculatorLib.csproj](./CalculatorLib.csproj) for target framework and dependencies.
 
-### 3. FORKING
-
-https://github.com/drago1979/CalculatorLib
 ### 4. INSTALLATION - via NuGet package
 
 1. Create NuGet.config file in your solution/project:
