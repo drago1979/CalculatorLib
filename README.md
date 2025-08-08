@@ -62,43 +62,49 @@ using CalculatorLib;
 
 Besides that, some other classes also have public methods in case you choose to access them directly. Eg:
 
-![Parser class methods](Documentation/parser_class_methods.jpg)
+![Input type decimal - methods](Documentation/input_type_decimal_methods.jpg)
+
+or
+
+![Input type operand - methods](Documentation/input_type_operand_methods.jpg)
 
 #### 6.1 GET ALLOWED VALUES
 
 ```csharp
-    Calculator.GetMaxDecimalValue(),
-    Calculator.GetMinDecimalValue(),
-    Calculator.GetOperandValues()
+    public void Test()
+    {
+        Calculator.GetMaxDecimalValue();
+        Calculator.GetMinDecimalValue();
+        Calculator.GetOperandValues();
+
+        InputTypeDecimal.GetMaxValue();
+        InputTypeDecimal.GetMinValue();
+        
+    }
+
 ```
 
 #### 6.2 PARSE USER INPUT
 ```csharp
-    public void ParsersExample()
+    public void Test()
     {
-        // Using Calculator class
-        Calculator.ParseDecimal("3");
-        Calculator.ParseOperand("+");
+        var num = InputTypeDecimal.Parse("6");
         
-        
-        // Using Parser classs
-        var decimalParser =  Calculator.GetDecimalParser();
-        decimalParser.Parse("9");
-        
-        var operandParser =  Calculator.GetOperandParser();
-        decimalParser.Parse("9");
-        
+        var operand = InputTypeOperand.Parse("/");
     }
 ````    
 
 #### 6.3 PERFORM CALCULATION
 ```csharp
-    public void CalculationExample()
+    public void Test()
     {
-        var num = Calculator.ParseDecimal("3");
-        var operand = Calculator.ParseOperand("+");
+        var num1 = InputTypeDecimal.Parse("6");
+        var num2 = InputTypeDecimal.Parse("3");
         
-        var result = Calculator.Calculate(num, num, operand);
+        var operand = InputTypeOperand.Parse("/");
+        
+        
+        var result = Calculator.Calculate(num1, num2, operand);
     }
 ```
 
