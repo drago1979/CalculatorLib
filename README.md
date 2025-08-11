@@ -2,7 +2,7 @@
 
 ### 1. GENERAL INFO
 This is a demo calculator library.
-Latest version: 1.0.6
+Latest version: 1.0.8
 
 
 ### 2. REQUIREMENTS
